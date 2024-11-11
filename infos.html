@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Mariage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        .central-dot {
+            font-size: 1.5em; /* Ajuste la taille du point si nécessaire */
+            vertical-align: middle; /* Aligne le point verticalement au milieu */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="burger-menu" onclick="toggleMenu()">☰</div> <!-- Icône menu burger -->
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="infos.html" class="active">Infos</a></li>
+                <li><a href="commentvenir.html">Comment venir ?</a></li>
+                <li><a href="oudormir.html">Ou dormir ?</a></li>
+                <li><a href="listemariage.html">Liste mariage</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScG2XghCBa2fgB7C0bLgtN7PV4K5PBsMrcuimV5XcL2ZnLjcw/viewform?usp=sf_link" target="_blank">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ajout menu burger pour mobile -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+    </script>
+
+    <!-- Sections de la page -->
+    <section id="infos">
+        <div class="image-text">
+            <img src="images/calendrier.png" class="no-resize"  height="35">
+            <h2>14 <span class="central-dot">·</span> 06 <span class="central-dot">·</span> 2025</h2>
+        </div>
+        <div class="image-text">
+            <img src="images/marker.png" alt="Description de l'image" height="75">
+            <h2>Domaine de la Barbeirasse</h2><h2><span class="central-dot">·</span></h2><h2>Céreste-en-Luberon</h2>
+        </div>
+           
+
+        <div class="grid-container4">
+            <div class="column">
+                <img src="images/rings2.png" class="no-resize" height="75">
+                <h5>Cérémonie laïque</h5>
+                <h7>16h</h7>
+            </div>
+            <div class="column">
+                <img src="images/drinklight.png" height="75">
+                <h5>Vin d'honneur</h5>
+                <h7>17h30</h7>
+            </div>
+            <div class="column">
+                <img src="images/diner.png" height="75">
+                <h5>Dîner</h5>
+                <h7>20h</h7>
+            </div>
+            <div class="column">
+                <img src="images/fete.png" height="75">
+                <h5>Fête</h5>
+                <h7>23h</h7>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p>Il n'y a pas de dress code. N'hésitez pas à venir en manche courte s'il fait chaud.</p>
+        <p>Les horaires pourront évoluer en cas de fortes chaleurs.</p>
+        <p>Nous vous invitons <u>à répondre au questionnaire de l'onglet "RSVP"</u> et à parcourir tout le site pour avoir toutes les infos.</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+/* styles.css */
+
+/* Style de base */
+
+header {
+    background-color: transparent;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    padding-top: 0px;
+    font-family: 'Poppins';
+    color: rgb(65, 65, 65);
+    background-color: rgba(255, 246, 231, 1);
+    text-align: center;
+}
+
+body.home {
+    background-image: url('images/gaspclairelight.webp'); /* Lien vers l'image de fond */
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du scroll */
+    color: white; /* Texte en blanc pour contraster avec l'image */
+    height: 100%; /* La section prend toute la hauteur de la fenêtre */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+#accueil {
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+
+#accueil h2 {
+    display: block;
+}
+
+#infos {
+    margin-top: 100px;
+}
+
+#venir {
+    margin-top: 50px;
+}
+
+#dormir_titre {
+    margin-top: 100px;
+    padding: 10px 10px;
+}
+
+#dormir {
+    margin-top: 10px;
+    padding: 10px 10px
+}
+
+#listemariage {
+    margin-top: 200px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+
+
+.column .block {
+    margin-top: 50px; /* Ajuste cette valeur pour plus ou moins d'espace */
+}
+
+.column .block_image {
+    margin-top: 30px; /* Ajuste cette valeur pour plus ou moins d'espace */
+}
+
+.column .block_image p{
+    font-style: italic;
+}
+
+.grid-container img {
+    width: 80%; /* L'image prend 100% de la largeur de son conteneur */
+    height: auto; /* Conserve les proportions */
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 80%; /* L'image prend 100% de la largeur de son conteneur */
+    height: auto; /* Conserve les proportions */
+    display: block;
+    
+}
+
+.image-text {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte au centre verticalement */
+    justify-content: center; /* Centre l'image et le texte horizontalement */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-text img {
+    margin-left: 15px;
+    margin-right: 15px; /* Ajoute un espace de 10px entre l'image et le texte */
+    margin-bottom: 6px;
+    height: 35px;
+    width: auto;
+    
+}
+
+.image-text h2 {
+    margin-left: 5px;
+    margin-right: 5px; /* Ajoute un espace de 10px entre l'image et le texte */
+    
+}
+
+/* Style de la barre de navigation */
+body.home .navbar {
+    background-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    position: fixed; /* Rendre la barre fixe */
+    top: 0;
+    width: 100%; /* Prendre toute la largeur de la page */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(255, 246, 231, 0.6);
+    overflow: hidden;
+    position: fixed; /* Rendre la barre fixe */
+    top: 0;
+    width: 100%; /* Prendre toute la largeur de la page */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    text-align: center;
+}
+
+
+/* Style des liens dans la navbar */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar a {
+    color: rgb(8, 80, 12);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+}
+
+body.home .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a.active {
+    /*text-decoration: underline !important;*/
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    position: relative;
+    display: inline-block;
+}
+
+.navbar a.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -2 px;
+    width: 50%; /* Largeur du soulignement */
+    height: 4px; /* Épaisseur du soulignement */
+    background-color: rgb(8, 80, 12); /* Couleur du soulignement */
+    border-radius: 2px; /* Arrondir les bords du soulignement si désiré */
+    transform: translateX(-50%); /* Centre le soulignement sous le texte */
+}
+
+body.home .navbar a.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -2 px;
+    width: 50%; /* Largeur du soulignement */
+    height: 4px; /* Épaisseur du soulignement */
+    background-color: rgb(255, 255, 255); /* Couleur du soulignement */
+    border-radius: 2px; /* Arrondir les bords du soulignement si désiré */
+    transform: translateX(-50%); /* Centre le soulignement sous le texte */
+}
+
+
+.navbar a:hover {
+    font-weight: bold;
+}
+
+
+/* Style pour les sections */
+section {
+    padding: 10px 10px;
+    height: auto; /* Pour exemple, ajustable selon le contenu */
+    margin-top: 0 px;
+}
+
+
+/* Style du texte */
+
+h1 {
+    font-size: 128px;
+    font-family: 'Sacramento';
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 28px;
+    color: rgb(8, 80, 12)
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 0px; /* Ajoute un espace de 20px sous le <h2> */
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h6 {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Ajoute un espace de 20px sous le <h2> */
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h7 {
+    margin-bottom: 10px; /* Ajoute un espace de 20px sous le <h2> */
+    font-size: 22px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+a {
+    margin-top: 5px;
+}
+
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.text-with-dot {
+    position: relative;
+    display: inline-block;
+}
+
+.text-with-dot::before {
+    content: '·'; /* Point moyen */
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Ajuste la position horizontale */
+    transform: translateX(10px) translateY(-50%); /* Ajuste la position verticale */
+    font-size: 1.5em; /* Taille du point */
+}
+
+.grid-container {
+    display: grid; /* Active CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Crée deux colonnes de taille égale */
+    gap: 20px; /* Espacement entre les colonnes */
+    padding: 10px;
+}
+
+.grid-container4 {
+    display: grid; /* Active CSS Grid */
+    grid-template-columns: 250px 250px 250px 250px; /* Crée deux colonnes de taille égale */
+    gap: 10px; /* Espacement entre les colonnes */
+    padding: 10px 250px;
+    margin: 30px auto;
+    max-width: 1040px;
+}
+
+.grid-container4 img {
+    height: 75px;
+    width: auto;
+    margin: auto;
+}
+
+.column {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pour le menu burger */
+.burger-menu {
+    display: none; /* Caché par défaut */
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+/* Pour écrans de moins de 768px */
+@media (max-width: 768px) {
+    .menu { 
+        display: block; /* Passer de horizontal à vertical sur mobile */
+    }
+    .contenu { 
+        font-size: 14px; /* Réduire la taille de police pour s’adapter à l’écran */
+    }
+
+    body.home {
+        background-image: url('images/nubehamac.jpg'); /* Lien vers l'image de fond */
+        background-size: cover; /* L'image couvre toute la section */
+        background-position: center; /* L'image est centrée */
+        background-attachment: fixed; /* L'image reste fixe lors du scroll */
+        color: white; /* Texte en blanc pour contraster avec l'image */
+        height: 100%; /* La section prend toute la hauteur de la fenêtre */
+        margin-top: 200px;
+    }
+
+    #infos {
+        margin-top: 50px;
+    }
+
+    #venir {
+        margin-top: 0px;
+    }
+
+    #dormir_titre {
+        margin-top: 50px;
+    }
+
+    #dormir {
+        margin-top: 0px;
+    }
+
+    .image-text {
+        flex-direction: column; /* Empile les éléments dans la colonne */
+        text-align: center; /* Centre les éléments */
+    }
+
+    .image-text h2 {
+        display: block; /* Chaque h2 prend une ligne entière */
+        width: 100%; /* S'assure qu'il occupe toute la largeur */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 140px
+    }
+
+    h2 {
+        display: block; /* Permet le contrôle des retours à la ligne */
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+
+    h5 {
+        margin-top: 10px;
+        margin-bottom: 0px; /* Ajoute un espace de 20px sous le <h2> */
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    h7 {
+        margin-bottom: 10px; /* Ajoute un espace de 20px sous le <h2> */
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    
+
+    .burger-menu {
+        display: block; /* Affiche le burger menu sur mobile */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Change en une seule colonne */
+        padding: 10px 10px;
+    }
+
+    .grid-container4 {
+        grid-template-columns: 1fr; /* Change en une seule colonne */
+        padding: 10px 10px;
+    }
+
+    /* Utilisation d'une vue en colonne pour les éléments de navigation */
+    .navbar ul {
+        flex-direction: column;
+        display: none; /* Masqué par défaut pour activer un menu burger */
+    }
+
+    /* Style du bouton burger */
+    .navbar .burger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1.5em;
+        background-color: rgba(255, 246, 231, 0.9)
+        
+    }
+
+    body.home .navbar .burger-menu {
+        background-color: rgba(255, 255, 255, 0)
+    }
+
+    /* Affichage du menu burger quand activé */
+    .navbar.active ul {
+        display: flex; /* Affiche les liens quand le burger est activé */
+        background-color: rgba(255, 246, 231, 0.9)
+    }
+
+    body.home .navbar.active ul {
+        display: flex; /* Affiche les liens quand le burger est activé */
+        background-color: rgba(0, 0, 0, 0.4)
+    }
+
+    /* Réduction des marges et padding */
+    .navbar li {
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 0.9em; /* Réduit la taille de la police */
+    }
+}
